@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto';
+}
+
+.header{
+  background-color: #BF4342;
+  height:100vh;
+  color: white;
+}
+
+.hero {
+  z-index: 0;
+  text-align: center;
+  margin-top:180px;
+  font-size: 55px;
+ /* make things invisible upon start */
+	animation:fadeIn 4s ease-in 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform:translateY(80px);
+    opacity: 0;
+  }
+
+  30% {
+     opacity: 1;
+
+  }
+
+  40% {
+    transform:translateY(10px);
+  }
+
+  50% {
+    transform:translateY(10px);
+  }
+
+  60% {
+    transform:translateY(10px);
+  }
+
+  100% {
+    transform:translateY(-50px)
+  }
+}
+
+.square {
+  border: white 2px solid;
+  width:120px;
+  height: 60px;
+  margin-left:39.5%;
+  z-index: 1;
+  background: white;
+  animation: enlarge 2s ease 1s forwards normal;
+}
+
+@keyframes enlarge {
+  0% {
+    height: 60px;
+  }
+
+  50%, 100%{
+    height: 3px;
+    transform:scaleX(1)
+  }
+
+  100% {
+    transform:scaleX(3)
+  }
+}
+
+.second{
+  text-align: center;
+  opacity: 0;
+  animation: showoff 2s ease 3s forwards;
+  font-size: 55px;
+}
+
+@keyframes showoff {
+  0% {
+    opacity: 0;
+    transform: translateY(0px)
+  }
+
+  50% {
+    opacity: 0;
+
+  }
+
+  60% {
+    opacity: 0.6;
+
+  }
+
+  70% {
+    opacity: 0.7;
+
+  }
+
+  80% {
+     opacity: 0.8;
+  }
+
+  90% {
+     opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-80px)
+
+  }
+}
+
+span {
+    color: white;
+    animation: flicker 2s ease 3s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    color: #2BDDBA;
+  }
+
+  5% {
+    color: #B77E80;
+  }
+
+  10% {
+    color: #20DB3D;
+  }
+
+  20% {
+    color: #EE2933;
+
+  }
+
+  30% {
+    color: #AC3AD4;
+
+  }
+
+  40% {
+    color: #5CDAE6;
+
+  }
+
+  50% {
+    color: #A510AC;
+
+  }
+
+  60% {
+    color: #25C2F6;
+
+  }
+
+  70% {
+    color: #CA368B;
+
+  }
+
+  80% {
+    color: #A3393C;
+
+  }
+
+  90% {
+    color: #AEEDCB;
+
+  }
+
+  100% {
+    color: #53F63E;
+
+  }
+}
+
+.wrap {
+  width: 100%;
+  text-align :center;
+  margin-left: 23%;
+  opacity: 0;
+  animation: enter 1s ease 5s forwards;
+  font-size: 27px;
+}
+
+@keyframes enter{
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.title{
+  float:left;
+  margin: 5px 10px 20px 0;
+}
+
+.title2{
+  float: left;
+  margin: 5px 10px;
+}
+
+
+.circle {
+	width: 50px;
+  float:left;
+	height: 50px;
+	background: transparent;
+	border-radius: 60px;
+  border: 5px solid;
+  border-left: 5px solid #0E4749;
+  border-right: 5px solid #0E4749;
+  animation: spin 1s ease 3s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(360deg)
+  }
+
+  100% {
+    transform:rotateZ(180deg)
+  }
+}
+
+/* ^^ Hero ^^ */
+
+.main {
+  text-align: center;
+  margin-top: 10%;
+}
